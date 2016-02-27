@@ -1,7 +1,7 @@
 import {Component} from 'angular2/core';
 import {RouteConfig, RouterOutlet} from 'angular2/router';
 
-import {TestComponent} from './components/test';
+import {ItemListComponent} from './components/itemListComponent';
 
 @Component({
   selector: 'app',
@@ -9,6 +9,6 @@ import {TestComponent} from './components/test';
   directives: [RouterOutlet]
 })
 @RouteConfig([
-  { path: '/', component: TestComponent }
+  { path: '/', component: ItemListComponent }
 ])
 export class App {}
