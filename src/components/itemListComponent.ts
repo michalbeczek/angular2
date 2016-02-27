@@ -1,5 +1,6 @@
 import {Component} from 'angular2/core';
 import {ItemComponent} from './itemComponent';
+import {Product} from './../models/product';
 
 @Component({
   selector: 'productList',
@@ -15,9 +16,10 @@ import {ItemComponent} from './itemComponent';
 
 export class ItemListComponent {
   public products: Array<Object> = [
-      {title: 'Item 1', price: 120, premium: false},
-      {title: 'Item 2', price: 130, premium: false},
-      {title: 'Item 2', price: 0, premium: true}
+      new Product('Item 1', '10', true, ['nowy', 'stary']),
+      new Product('Item 2', '20', false, ['używany']),
+      new Product('Item 3', '30', false, ['nowy']),
+      new Product('Item 4', '40', false, ['używany']),
   ];
   constructor() {}
 }
