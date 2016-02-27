@@ -1,4 +1,5 @@
 import {Component} from 'angular2/core';
+import {ProductInterface} from '../models/productInterface';
 
 @Component({
   selector: 'product-item',
@@ -13,5 +14,5 @@ import {Component} from 'angular2/core';
 })
 
 export class ItemComponent {
-  public product:any;
+  public product: ProductInterface;
 }

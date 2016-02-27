@@ -1,15 +1,15 @@
-import {ProductInterface} from './productInterface';
+import { ProductInterface } from './productInterface';
 
 export class Product {
-    title: string;
-    price: string;
-    premium: boolean;
-    tags: Array<String>;
+    public title: string = '';
+    public price: string = '';
+    public premium: boolean = false;
+    public tags: Array<String> = [];
 
-    constructor(title: string, price: string, premium: boolean, tags: Array<String>) {
-      this.title = title;
-      this.price = price;
-      this.premium = premium;
-      this.tags = tags;
+    constructor(product: ProductInterface) {
+      this.title = product.title;
+      this.price = product.price;
+      this.premium = product.premium;
+      this.tags = product.tags;
     }
 }
