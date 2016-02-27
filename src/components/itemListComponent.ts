@@ -19,11 +19,11 @@ import {FilterPipe} from './filterPipe';
 
 export class ItemListComponent {
   public filterString = '';
-  
+
   public products: Array<Object> = [
       new Product({title: 'Item 1', price: '10', premium: true, tags: ['nowy', 'stary']}),
-      new Product({title: 'SriItem 2', price: '20', premium: true, tags: ['nowy', 'stary']}),
-      new Product({title: 'SriItem 3', price: '30', premium: true, tags: ['nowy', 'stary']}),
+      new Product({title: 'SriItem 2', price: '20', premium: true, tags: ['stary']}),
+      new Product({title: 'SriItem 3', price: '30', premium: true, tags: ['stary']}),
       new Product({title: 'Abc 4', price: '40', premium: true, tags: ['nowy', 'stary']}),
   ];
 
